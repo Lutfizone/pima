@@ -1,0 +1,11 @@
+/* ======= LAPTOP ========= */
+
+@media screen and (max-width: 1600px) {
+    #about {
+        height: 80vh;
+    }
+
+        h1.about__heading::after,
+        h1.contact__heading::after { left: 40%; }
+        h1.skills__heading::after { left: 20%; }
+}

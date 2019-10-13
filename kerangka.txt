@@ -1,0 +1,26 @@
+Main Page
+  - Welcome Screen
+  - Features
+  - Testimonial
+  - Trusted By
+  - Footer
+
+About
+  - Biodata company
+  - Sejarah company
+
+Support
+  - FaQ
+  - Contact Person
+  - Newsletter
+
+==========================
+
+Welcome screen
+Biodata
+Features
+Project
+Countdown
+Newsletter
+Trusted By
+Footer
