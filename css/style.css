@@ -75,7 +75,6 @@ nav {
 		width: 70%;
 		height: 100%;
 		margin: 0 auto;
-		padding: 2em;
 	}
 
 		.nav__logo {
@@ -90,7 +89,14 @@ nav {
 				font-size: 2em;
 				color: #03DDDC;
 				text-decoration: none;
+				width: 72px;
+				height: 72px;
 			}
+
+				.nav__logo a img {
+					width: 100%;
+					height: 100%;
+				}
 
 			.nav__logo a:hover {
 				color: #03DDDC;
@@ -411,7 +417,7 @@ nav {
 /* ========== HISTORY ============= */
 
 #history {
-	margin: 5em auto;
+	margin: 10em auto;
 }
 
 	.swiper-container {
@@ -422,8 +428,8 @@ nav {
 	    .swiper-slide {
 	    	text-align: center;
 	    	font-size: 18px;
-			background: #fff;
-			border: 1px solid red;
+				background: #fff;
+
 	    	/* Center slide text vertically */
 	    	display: -webkit-box;
 	    	display: -ms-flexbox;
@@ -436,10 +442,7 @@ nav {
 	    	-webkit-box-align: center;
 	    	-ms-flex-align: center;
 	    	-webkit-align-items: center;
-			align-items: center;
-			
-			width: 1040px;
-			height: 1040px;
+				align-items: center;
 	    }
 
 /* ========== COUNTDOWN =========== */
@@ -542,90 +545,37 @@ nav {
 				font-size: 1.1em;	
 			}
 
-/* ========= CONTACT ========== */
-
-/* .contact__container { width: 40%; }
-
-	h1.contact__header {
-		text-align: center;
-		margin-bottom: 1em;
-	}
-
-	p.contact__desc {
-		font-family: sfRegular;
-		font-size: 1.05em;
-
-		color: #737e91;
-		width: 100%;
-		line-height: 1.6em;
-		text-align: center;
-	}
-
-	a.contact__link.contact__section {
-		margin: 2em auto;
-	} */
-
 
 /* ======== FOOTER ========== */
 
-.footer {
-	color:#fff;
-	padding-top: 5rem;
-	background-color: #000e26;
+footer {
+	background-color: #20346B;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	padding: 1em 0;
+	position: relative;
 }
 
-.footer .footer-col {
-	margin-bottom: 2.25rem;
-}
+	.footer__container {
+		z-index: 99-;
+	}
 
-.footer h4 {
-	margin-bottom: 1rem;
-}
+		.footer__icon__container {
+			margin: 1.5em auto;
+			margin-bottom: 0;
+			height: 175px;
+			width: 175px
+		}
 
-.footer .list-unstyled .fas {
-	color: #00c9db;
-	font-size: 0.5rem;
-	line-height: 1.375rem;
-}
+			.footer__icon__container img {
+				width: 100%;
+				height: 100%;
+			}
 
-.footer .list-unstyled .media-body {
-	margin-left: 0.625rem;
-}
-
-.footer .fa-stack {
-	margin-bottom: 0.75rem;
-	margin-right: 0.5rem;
-	font-size: 1.5rem;
-}
-
-.footer .fa-stack .fa-stack-1x {
-    color: #000e26;
-	transition: all 0.2s ease;
-}
-
-.footer .fa-stack .fa-stack-2x {
-	color: #f1f1f8;
-	transition: all 0.2s ease;
-}
-
-.footer .fa-stack:hover .fa-stack-1x {
-	color: #f1f1f8;
-}
-
-.footer .fa-stack:hover .fa-stack-2x {
-    color: #00c9db;
-}
-
-
-/* ========= COPYRIGHT ========== */
-.copyright {
-	padding-top: 1rem;
-	padding-bottom: 0.5rem;
-	background-color: #000e26;
-	text-align: center;
-}
-
-.copyright .p-small {
-	color: #f1f1f8;
-	opacity: 0.6;
-}
+		p.footer__text {
+			font-family: sfRegular;
+			font-size: 1.15em;
+			color: #FFF;
+			text-align: center;
+		}
