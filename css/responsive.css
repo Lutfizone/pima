@@ -138,8 +138,12 @@
 /*  =========== PHONE =========== */
 @media screen and (max-width: 767px) {
 
+    .nav__container {
+        padding: 0 1em;
+    }
+
     #hero {
-        height: 100vh;
+        height: 70vh !important;
     }
 
         h1.hero__main__header {
@@ -148,7 +152,7 @@
         }
 
     #about {
-        margin: 10em auto;
+        margin: 0 auto;
     }
 
         h1.about__header {
