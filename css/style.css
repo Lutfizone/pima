@@ -24,9 +24,9 @@
 	box-sizing: border-box;
 }
 
-/* body {
-	background-color: #00112e;
-} */
+body {
+	overflow-x: hidden;
+}
 
 .penting {
 	color: #03DDDC;
@@ -337,7 +337,7 @@ nav {
 /* ============ FEATURES ================ */
 
 #features,
-#history,
+#project,
 #countdown,
 #newsletter {
 	display: grid;
@@ -413,9 +413,9 @@ nav {
 				}
 
 
-/* ========== HISTORY ============= */
+/* ========== project ============= */
 
-#history {
+#project {
 	margin: 10em auto;
 	height: 80vh;
 }
@@ -440,12 +440,15 @@ nav {
 				display: flex;
 				justify-content: center;
 				align-items: center;
+
+				height: 100%;
+                width: 100%;
 			}
 
 				.swiper-image-container img {
 					width: 100%;
 					height: 100%;
-					object-fit: fill;
+					object-fit: contain;
 				}
 
 /* ========== COUNTDOWN =========== */
@@ -488,19 +491,30 @@ nav {
 			margin-top: 3em;
 		}
 
-			.text {
-				font-family: calibreSemiBold;
-				font-weight: 400;
+			.clocks-container {
+				display: inline-block;
+				margin: 0 auto;
 			}
 
-				.text .val {
-					font-size: 1em;
+				.text {
+					font-family: calibreSemiBold;
+					font-weight: 400;
 				}
 
-				.text .type-time {
-					font-size: .6em;
-					letter-spacing: 3px;
-				}
+					.text .val,
+					.text .type-time {
+						padding: 0;
+						margin: 0;
+					}
+
+					.text .val {
+						font-size: 1em;
+					}
+
+					.text .type-time {
+						font-size: .6em;
+						letter-spacing: 3px;
+					}
 
 
 /* ========= NEWSLETTER ========== */
@@ -556,12 +570,13 @@ footer {
 	background-size: cover;
 	width: 100%;
 	height: auto;
-	padding: 1em 0;
+	padding-top: 1em;
 	position: relative;
 }
 
 	.footer__container {
-		z-index: 99-;
+		margin: 0 auto;
+		width: 70%;
 	}
 
 		.footer__icon__container {
@@ -576,9 +591,24 @@ footer {
 				height: 100%;
 			}
 
-		p.footer__text {
+		div.footer__text p {
 			font-family: sfRegular;
-			font-size: 1.15em;
+			font-size: .95em;
 			color: #FFF;
 			text-align: center;
+		}
+
+		div.footer__text p:first-child {
+			font-size: 1.25em;
+		}
+
+		.footer__author {
+			background-color: #1B2B58;
+			color: #FFF;
+			font-family: sfRegular;
+			font-size: .9em;
+			text-align: center;
+			margin-top: 2em;
+			padding: .5em;
+			width: 100%;
 		}

@@ -6,14 +6,18 @@
         height: 100px;
     }
 
+        h1.hero__main__header {
+            font-size: 3.25em;
+            margin-top: 2em;
+        }
+
         h1.about__heading::after,
         h1.contact__heading::after { left: 40%; }
         h1.skills__heading::after { left: 20%; }
 
-    
 
     .swiper-container {
-        width: 70%;
+        width: 80%;
     }
 
         .swiper-image-container img {
@@ -24,14 +28,20 @@
         height: 80vh;
     }
 
-        .text .val {
-            font-size: 1.4em !important;
+        .clock-item.countdown-time-value {
+            width: 225px !important;
+            height: 225px !important;
+            margin: 0 auto;
         }
 
-        .text .type-time {
-            font-size: .9em !important;
-            font-weight: 400;
-        }
+            .text .val {
+                font-size: 1.4em !important;
+            }
+
+            .text .type-time {
+                font-size: .9em !important;
+                font-weight: 400;
+            }
 
     h1.newsletter__header {
         font-size: 2.5em;
@@ -49,6 +59,15 @@
             top: 38.5%;
             transform: translateY(-38.5%);
         }
+
+    .footer__icon__container {
+        height: 140px;
+        width: 140px;
+    }
+
+    .footer__text p:first-child {
+        font-size: .9em;
+    }
 }
 
 /* ======= TABLET ========== */
@@ -109,8 +128,8 @@
         grid-template-columns: 2fr 1fr;
     }
         .features__icon__container {
-            width: 200px;
-            height: 200px;
+            width: 230px;
+            height: 230px;
         }
 
         .features__desc h1 {
@@ -122,26 +141,33 @@
             width: 80%;
         }
 
+    /* ======== SWIPER ========= */
 
-    /* ======= PROJECT ======== */
-
-    #project {
-        margin: 15em 0;
-        height: 60vh;
+    .swiper-container {
+        width: 85%;
+        height: 100%;
     }
 
-        .swiper-container {
-            width: 85%;
-            height: 100%;
-        }
+
+    /* ======== COUNTDOWN ========== */
 
     #countdown {
         height: 40vh !important;
     }
 
-        .text .type-time {
-            font-size: .7em !important;
+        .clock-item.countdown-time-value {
+            width: 175px !important;
+            height: 175px !important;
+            margin: 0 auto;
         }
+
+            .text .val {
+                font-size: 1.2em !important;
+            }
+
+            .text .type-time {
+                font-size: .7em !important;
+            }
 
     #newsletter {
         height: 40vh !important;
@@ -153,98 +179,13 @@
 /*  =========== PHONE =========== */
 @media screen and (max-width: 767px) {
 
-    .nav__container {
-        padding: 0 1em;
-    }
-
-    #hero {
-        height: 70vh !important;
-    }
-
-        h1.hero__main__header {
-            text-align: center;
-            font-size: 2.25em;
-        }
-
-    #about {
-        margin: 0 auto;
-    }
-
-        h1.about__header {
-            font-size: 2.25em;
-            width: 90%;
-        }
-
-    
-    .features__container {
-        grid-gap: 5em;
-    }
-
-        .features__icon__container {
-            width: 150px;
-            height: 150px;
-        }
-
-        .features__desc h1 {
-            text-align: center;
-        }
-
-        .features__desc h1::after {
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .features__desc p {
-            margin: 10px auto;
-            text-align: center;
-        }
-
-        .features__item__container:nth-child(even) .features__icon {
-            order: -1;
-        }
-
-
-    #countdown {
-        height: auto !important;
-    }
-
-        .clocks-container {
-            display: inline-block;
-            margin: 2em auto;
-            width: 287px;
-        }
-
-            .clock-item.countdown-time-value {
-                width: 140px !important;
-                height: 140px !important;
-                margin: 0 auto;
-            }
-
-                .text .val {
-                    font-size: .9em !important;
-                    padding: 0;
-                    margin: 0;
-                    margin-top: 12px;
-                }
-
-                .text .type-time {
-                    font-size: .5em !important;
-                    margin: 0;
-                }
-
-    #newsletter {
-        height: 50vh !important;
-    }
-
     .hero__container,
-    .skills__container,
     .about__container,
     .newsletter__container {
         width: 90%;
     }
 
     h1.about__heading,
-    h1.skills__heading,
     h1.education__heading,
     h1.contact__heading {
         font-size: 1.7em;
@@ -256,11 +197,12 @@
         left: 40%;
         width: 35%;
     }
-    
+
     /* ======= NAV ======== */
     .nav__container {
         align-items: center;
         grid-template-columns: 1fr auto;
+        padding: 0 1em;
         width: 100%;
     }
 
@@ -268,36 +210,143 @@
 
         .nav__mobile__btn { display: inline-block; }
 
-    
+
     /* ======= HERO ======== */
-    h1.hero__main__heading,
-    h1.hero__secondary__heading {
-        font-size: 2em;
-        text-align: center;
+    #hero {
+        height: 70vh !important;
     }
 
-    p.hero__paragraph {
-        text-align: center;
-        width: 100%;
-        font-size: 1em;
+        h1.hero__main__header {
+            text-align: center;
+            font-size: 2.25em;
+        }
+    
+        p.hero__paragraph {
+            text-align: center;
+            width: 100%;
+            font-size: 1em;
+        }
+    
+        a.contact__link {
+            font-size: 0.9em;
+            padding: 10px;
+            margin: 2em auto;
+        }
+
+    
+    /* ======= ABOUT ====== */
+
+    #about {
+        height: 100vh;
+        margin: 0 auto;
     }
 
-    a.contact__link {
-        font-size: 0.9em;
-        padding: 10px;
-        margin: 2em auto;
+        h1.about__header {
+            font-size: 2.25em;
+            width: 90%;
+        }
+
+        p.about__paragraph {
+            width: 100%;
+            font-size: 1em;
+        }
+
+    
+    /* ======= FEATURES ======= */
+
+    #features {
+        margin: 0 auto;
+    }
+    
+        .features__container {
+            grid-gap: 2em;
+        }
+
+            .features__icon__container {
+                width: 150px;
+                height: 150px;
+            }
+
+            .features__desc h1 {
+                text-align: center;
+            }
+
+            .features__desc h1::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .features__desc p {
+                margin: 10px auto;
+                text-align: center;
+            }
+
+            .features__item__container:nth-child(even) .features__icon {
+                order: -1;
+            }
+
+
+    /* ====== PROJECT ======= */
+
+    #project {
+        height: 65vh;
     }
 
+        .swiper-container {
+            width: 90%;
+            height: 100%;
+        }
 
-    /* ======== ABOUT ======== */
-    #about { height: 100vh; margin-bottom: 2em; }
+            /* .swiper-image-container {
+                height: 100%;
+                width: 100%;
+            } */
 
-        p.about__paragraph { width: 100%; font-size: 1em; }
 
-        .profilePic__container { width: 250px; height: 250px; }
+    /* ======= COUNTDOWN ======= */
+
+    #countdown {
+        height: auto !important;
+    }
+
+        .countdown-container {
+            margin: 2em auto;
+        }
+
+            h1.countdown__header {
+                font-size: 1.75em;
+            }
+
+                .clocks-container {
+                    display: inline-block;
+                    margin: 2em auto;
+                    width: 287px;
+                }
+
+                    .clock-item.countdown-time-value {
+                        width: 140px !important;
+                        height: 140px !important;
+                        margin: 0 auto;
+                    }
+
+                        .text .val {
+                            font-size: .9em !important;
+                            padding: 0;
+                            margin: 0;
+                            margin-top: 12px;
+                        }
+
+                        .text .type-time {
+                            font-size: .5em !important;
+                            margin: 0;
+                        }
 
 
     /* ======== NEWSLETTER ========= */
+
+    /* #newsletter {
+        height: 50vh !important;
+    } */
 
     #newsletter {
         height: 80vh;
@@ -324,11 +373,15 @@
                 font-size: 1em;
             }
 
-
-    /* ====== PROJECT ======= */
-
-    #history {
-        height: 65vh;
+    /* ======= FOOTER ======== */
+    
+    .footer__container {
+        margin: 10px auto;
+		width: 90%;
     }
-
+    
+        .footer__icon__container {
+            height: 130px;
+            width: 130px;
+        }
 }
