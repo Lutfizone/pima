@@ -10,6 +10,16 @@
         h1.contact__heading::after { left: 40%; }
         h1.skills__heading::after { left: 20%; }
 
+    
+
+    .swiper-container {
+        width: 70%;
+    }
+
+        .swiper-image-container img {
+            width: 80%;
+        }
+
     #countdown {
         height: 80vh;
     }
@@ -113,12 +123,17 @@
         }
 
 
-    /* ======= HISTORY ======== */
+    /* ======= PROJECT ======== */
 
-    #history {
+    #project {
         margin: 15em 0;
         height: 60vh;
     }
+
+        .swiper-container {
+            width: 85%;
+            height: 100%;
+        }
 
     #countdown {
         height: 40vh !important;
@@ -188,9 +203,6 @@
             order: -1;
         }
 
-        .swiper-wrapper {
-            width: auto;
-        }
 
     #countdown {
         height: auto !important;
@@ -311,5 +323,12 @@
             .newsletter__form__container button {
                 font-size: 1em;
             }
+
+
+    /* ====== PROJECT ======= */
+
+    #history {
+        height: 65vh;
+    }
 
 }
